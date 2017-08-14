@@ -96,21 +96,20 @@ class Pagination extends Component {
       backwardText,
       className,
       forwardText,
-      itemsPerPageText,
-      itemRangeText,
-      pageNumberText,
-      pageRangeText,
-      page, // eslint-disable-line no-unused-vars
-      pageSize, // eslint-disable-line no-unused-vars
-      pageSizes,
-      itemText,
-      pageText,
-      pagesUnknown,
       isLastPage,
-      pageInputDisabled,
-      totalItems,
+      itemRangeText,
+      itemsPerPageText,
+      itemText,
       onChange, // eslint-disable-line no-unused-vars
       page: pageNumber, // eslint-disable-line no-unused-vars
+      pageInputDisabled,
+      pageNumberText,
+      pageRangeText,
+      pageSize, // eslint-disable-line no-unused-vars
+      pageSizes,
+      pagesUnknown,
+      pageText,
+      totalItems,
       ...other
     } = this.props;
 

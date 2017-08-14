@@ -1,11 +1,11 @@
-import PropTypes from "prop-types";
-import React, { Component } from "react";
-import classnames from "classnames";
-import Icon from "./Icon";
-import Select from "./Select";
-import SelectItem from "./SelectItem";
-import TextInput from "./TextInput";
-import { equals } from "../lib/array";
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import classnames from 'classnames';
+import Icon from './Icon';
+import Select from './Select';
+import SelectItem from './SelectItem';
+import TextInput from './TextInput';
+import { equals } from '../lib/array';
 
 class Pagination extends Component {
   static propTypes = {
@@ -29,12 +29,12 @@ class Pagination extends Component {
     pageInputDisabled: PropTypes.bool
   };
   static defaultProps = {
-    backwardText: "Backward",
+    backwardText: 'Backward',
     itemRangeText: (min, max, total) => `${min}-${max} of ${total} items`,
-    forwardText: "Forward",
-    itemsPerPageText: "items per page",
+    forwardText: 'Forward',
+    itemsPerPageText: 'items per page',
     onChange: () => {},
-    pageNumberText: "Page Number",
+    pageNumberText: 'Page Number',
     pageRangeText: (current, total) => `${current} of ${total} pages`,
     disabled: false,
     page: 1,
@@ -113,7 +113,7 @@ class Pagination extends Component {
       ...other
     } = this.props;
 
-    const classNames = classnames("bx--pagination", className);
+    const classNames = classnames('bx--pagination', className);
 
     return (
       <div className={classNames} {...other}>

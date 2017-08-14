@@ -114,7 +114,6 @@ class Pagination extends Component {
       ...other
     } = this.props;
 
-    // const { page, pageSize } = this.state;
     const classNames = classnames("bx--pagination", className);
 
     return (
@@ -138,7 +137,7 @@ class Pagination extends Component {
             {pagesUnknown
               ? itemText(
                   this.state.pageSize * (this.state.page - 1) + 1,
-                  page * pageSize
+                  this.state.page * this.state.pageSize
                 )
               : itemRangeText(
                   this.state.pageSize * (this.state.page - 1) + 1,
